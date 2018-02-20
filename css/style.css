@@ -1,0 +1,204 @@
+/* START */
+
+@import url(https://fonts.googleapis.com/css?family=OpenSans);
+@import url(https://fonts.googleapis.com/css?family=Bad+Script);
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    text-align: justify;
+}
+
+
+/* forsideskrift */
+
+.forsideskrift {
+    font-family: 'Bad Script', sans-serif;
+}
+
+/*fade på overskrift*/
+.hidden{
+display: none;
+}
+
+/* parallax effekt start */
+
+.billede1,
+.billede2,
+.billede3,
+.billede4,
+.billede5,
+.billede6,
+.billede7,
+.billede8,
+.videostart{
+    position: relative;
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+
+/* parallax effekt slut */
+
+
+/* website billeder start */
+
+.billede1 {
+    background-image: url('../img/image1.png');
+    min-height: 100%;
+}
+
+.billede2 {
+    background-image: url('../img/image2.png');
+    min-height: 100%;
+}
+
+.billede3 {
+    background-image: url('../img/image3.png');
+    min-height: 100%;
+}
+
+.billede4 {
+    background-image: url('../img/image4.png');
+    min-height: 100%;
+}
+
+.billede5 {
+    background-image: url('../img/image5.png');
+    min-height: 100%;
+}
+
+.billede6 {
+    background-image: url('../img/image6.png');
+    min-height: 100%;
+}
+
+.billede7 {
+    background-image: url('../img/image7.png');
+    min-height: 100%;
+}
+
+.billede8 {
+    background-image: url('../img/image5.png');
+    min-height: 100%;
+}
+
+/* website billeder slut */
+
+
+/* css til de forskellige sections */
+
+.section {
+    position: relative;
+    text-align: center;
+    padding: 50px 80px;
+    background-color: #474e60;
+    
+}
+
+.sectiondiff1 {
+    background-color: #474e60;
+    color: #ffffff;
+}
+
+.sectiondiff2 {
+    background-color: #474e60;
+    color: white;
+}
+
+
+/* css til sections slut */
+
+
+/* css til tekst på websitet */
+
+.ptext {
+    position: absolute;
+    top: 47%;
+    width: 100%;
+    text-align: center;
+    color: #474e60;
+    font-size: 150px;
+    letter-spacing: 8px;
+}
+
+.ptext .border {
+    background-color: transparent;
+    color: #474e60;
+    padding: 20px;
+}
+
+.ptext .border.trans {
+    background-color: #474e60;
+}
+
+section:hover {
+    background-color: #474e60;
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+    border:none!important;
+   
+   
+    
+}
+
+section {
+    transition: transform 3.5s ease-out .1s;
+
+}
+
+/* css til tekst på websitet slut */
+
+/* video test */
+video#bgvid { 
+    position: relative;
+    margin-top: 450px;
+    margin-bottom: -553px;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+   -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+}
+
+.secmargin{
+    margin-top: 0px;
+}
+
+/* video slut */
+
+.overflowses{
+    overflow-x: hidden;
+}
+
+
+/* fjernelse af parallax effekt til mobile enheder */
+
+@media(max-width:568px) {
+    .billede1,
+    .billede2,
+    .billede3,
+    .billede4{
+        background-attachment: scroll;
+    }
+    
+}
+
+
+/* END */
