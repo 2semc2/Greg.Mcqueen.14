@@ -2,6 +2,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=OpenSans);
 @import url(https://fonts.googleapis.com/css?family=Bad+Script);
+@import url(https://fonts.googleapis.com/css?family=Sacramento);
 body,
 html {
     height: 100%;
@@ -17,7 +18,12 @@ html {
 /* forsideskrift */
 
 .forsideskrift {
-    font-family: 'Bad Script', sans-serif;
+    font-family: 'Sacramento', sans-serif;
+}
+
+.overskrift {
+    font-family: 'Sacramento', sans-serif;
+    font-size: 45px;
 }
 
 /*fade på overskrift*/
@@ -33,7 +39,7 @@ display: none;
 .billede4,
 .billede5,
 .billede6,
-.billede7,
+/*.billede7,*/
 .billede8,
 .videostart{
     position: relative;
@@ -48,13 +54,21 @@ display: none;
 
 /* parallax effekt slut */
 
+.billede7{
+    position: relative;
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    z-index: 3;
+}
+
 
 /* website billeder start */
 
-.billede1 {
-    background-image: url('../img/image1.png');
-    min-height: 100%;
-}
+
+
 
 .billede2 {
     background-image: url('../img/image2.png');
@@ -114,6 +128,11 @@ display: none;
     color: white;
 }
 
+.footersec{
+    background-color: #ffffff;
+    color: black;
+}
+
 
 /* css til sections slut */
 
@@ -148,9 +167,17 @@ section:hover {
     /* Safari 3-8 */
     transform: scale(1.1);
     border:none!important;
-   
-   
-    
+}
+
+
+.footersec:hover {
+    background-color: #ffffff;
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+    border:none!important;
 }
 
 section {
@@ -185,6 +212,10 @@ video#bgvid {
 
 .overflowses{
     overflow-x: hidden;
+}
+
+.footerpic{
+    margin-top: 20px;
 }
 
 
